@@ -1,0 +1,23 @@
+<template name="BorderLayout">
+    <div class="border-layout">
+        <header class="north">
+            {{> Template.dynamic region 'north'}}
+            {{> Template.dynamic region 'navBar'}}
+        </header>
+        <section class="container">
+            <aside class="west">
+                {{> Template.dynamic region 'west'}}
+            </aside>
+            <article class="middle">
+                {{> Template.dynamic region 'middle'}}
+            </article>
+            <aside class="east">
+                {{> Template.dynamic region 'east'}}
+            </aside>
+        </section>
+        <footer>
+            {{> Template.dynamic region 'bot_nav'}}
+            {{> Template.dynamic region 'south'}}
+        </footer>
+    </div>
+</template>
