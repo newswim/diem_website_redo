@@ -1,11 +1,22 @@
 <body>
 
+    <h1>DiemSite Redesign</h1>
 
-<h1>DiemSite Redesign</h1>
+    <div class="drop-down-container">
 
+        {{ ! In a template }}
+        {{#dropdownTrigger name="dropdown-menu" }}
+          <button>Menu button</button>
+        {{/dropdownTrigger}}
 
+        {{#dropdown name="dropdown-menu"}}
+          <p>Hello world!</p>
+          <h2>test</h2>
+          <h2>test</h2>
+          <h2>test</h2>
+          <h2>test</h2>
+        {{/dropdown}}
 
-
-
+    </div>
 
 </body>

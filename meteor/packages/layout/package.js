@@ -9,7 +9,11 @@ Package.describe({
 Package.onUse(function(api) {
     api.versionsFrom('1.2.0.2');
     api.use('peerlibrary:blaze-components');
+    api.use('peerlibrary:blaze-layout-component');
     api.use('mquandalle:stylus');
+    api.use('kadira:flow-router');
+    api.use('ecmascript');
+
 
     // New Meteor 1.2 sylus importing
     // api.addFiles([
@@ -20,9 +24,16 @@ Package.onUse(function(api) {
 
     // Client imports
     api.addFiles([
-        'main/border_layout.html',
-        'main/border_layout.import.styl',
-        'main/border_layout.js'
+        'border-layout/border_layout.html',
+        'border-layout/border_layout.import.styl',
+        'border-layout/border_layout.js',
+
+        'main/default_layout.html',
+        'main/default_layout.js',
+        // TODO: figure out the performance costs of not calling .import
+        // calling .import.styl prevents Meteor from processing the file independently
+        'main/default_layout.styl'
+
     ],'client');
 });
 

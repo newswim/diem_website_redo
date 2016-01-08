@@ -10,6 +10,9 @@ Package.onUse(function(api) {
     api.versionsFrom('1.2.0.2');
     api.use('peerlibrary:blaze-components');
     api.use('mquandalle:stylus');
+    api.use('kadira:flow-router');
+    api.use('kadira:blaze-layout');
+    api.use('diem:layout');
 
     // Routes
     api.addFiles([
@@ -33,6 +36,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('diem:core');
-  api.addFiles('front-page-tests.js');
+  api.use('diem:components');
+  // api.addFiles('front-page-tests.js');
 });
