@@ -1,3 +1,3 @@
-/meteor/.meteor/
-/meteor/public/
+# /meteor/.meteor/
+# /meteor/public/
 /.imdone/
