@@ -31,6 +31,15 @@ Package.onUse(function(api) {
         'client/services/services.html',
         'client/services/services.styl',
         'client/services/services.js',
+        'client/careers/careers.html',
+        'client/careers/careers.styl',
+        'client/careers/careers.js',
+        'client/portfolio/portfolio.html',
+        'client/portfolio/portfolio.styl',
+        'client/portfolio/portfolio.js',
+        'client/testimonials/testimonials.html',
+        'client/testimonials/testimonials.styl',
+        'client/testimonials/testimonials.js',
 
     ],'client');
 });

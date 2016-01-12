@@ -21,7 +21,7 @@ FlowRouter.route('/about', {
 });
 
 FlowRouter.route('/contact', {
-  name: 'about',
+  name: 'contact',
   action: function (/*params, queryParams*/) {
     BlazeLayout.render('MainLayout', {
       top: 'NavBar',
@@ -32,7 +32,7 @@ FlowRouter.route('/contact', {
 });
 
 FlowRouter.route('/partners', {
-  name: 'about',
+  name: 'partners',
   action: function (/*params, queryParams*/) {
     BlazeLayout.render('MainLayout', {
       top: 'NavBar',
@@ -43,7 +43,7 @@ FlowRouter.route('/partners', {
 });
 
 FlowRouter.route('/services', {
-  name: 'about',
+  name: 'services',
   action: function (/*params, queryParams*/) {
     BlazeLayout.render('MainLayout', {
       top: 'NavBar',
@@ -52,6 +52,40 @@ FlowRouter.route('/services', {
     });
   }
 });
+
+FlowRouter.route('/careers', {
+  name: 'careers',
+  action: function (/*params, queryParams*/) {
+    BlazeLayout.render('MainLayout', {
+      top: 'NavBar',
+      main: 'CareersPage',
+      bottom: 'MainFooter'
+    });
+  }
+});
+
+FlowRouter.route('/portfolio', {
+  name: 'portfolio',
+  action: function (/*params, queryParams*/) {
+    BlazeLayout.render('MainLayout', {
+      top: 'NavBar',
+      main: 'PortfolioPage',
+      bottom: 'MainFooter'
+    });
+  }
+});
+
+FlowRouter.route('/testimonials', {
+  name: 'testimonials',
+  action: function (/*params, queryParams*/) {
+    BlazeLayout.render('MainLayout', {
+      top: 'NavBar',
+      main: 'TestimonialsPage',
+      bottom: 'MainFooter'
+    });
+  }
+});
+
 
 FlowRouter.notFound = {
     // Subscriptions registered here don't have Fast Render support.

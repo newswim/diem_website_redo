@@ -1,0 +1,12 @@
+.portfolio-outer
+    lost-center 1020px 20px
+
+    > .img-wrapper
+        +below(800px)
+            lost-column 1/1
+        +above(800px)
+            lost-column 1/2
+        +above(1150px)
+            lost-column 1/3
+        > img
+            width 100%

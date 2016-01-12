@@ -18,18 +18,22 @@ Package.onUse(function(api) {
     api.addFiles([
 
         'client/navbar/navbar.html',
-        'client/navbar/mobile_nav.html',
-        'client/navbar/desktop_nav.html',
-        'client/footer/main_footer.html',
-
+        'client/navbar/navbar.styl',
         'client/navbar/navbar.js',
-        'client/navbar/mobile_nav.js',
-        'client/navbar/desktop_nav.js',
+        
+        'client/bottom-nav/bottom_nav.html',
+        'client/bottom-nav/bottom_nav.styl',
+        'client/bottom-nav/bottom_nav.js',
+
+        'client/footer/main_footer.html',
         'client/footer/main_footer.js',
-
         'client/footer/main_footer.styl',
-        'client/navbar/navbar.styl'
 
+        'client/navbar/mobile_nav.html',
+        'client/navbar/mobile_nav.js',
+
+        'client/navbar/desktop_nav.html',
+        'client/navbar/desktop_nav.js',
 
     ],'client');
 
