@@ -1,0 +1,19 @@
+<template name="MobileNav">
+    <div class="drop-down-container">
+
+        {{#dropdownTrigger name="dropdown-menu" }}
+          <button><i class="fa fa-bars"></i></button>
+        {{/dropdownTrigger}}
+
+        {{#dropdown name="dropdown-menu" align="left"}}
+        <a href="/services"><h2>services</h2></a>
+        <a href="/partners"><h2>partners</h2></a>
+        <a href="/contact"><h2>contact us</h2></a>
+            <!-- {{#each menuItems}}
+            <h2>{{title}}</h2>
+            {{/each}} -->
+        {{/dropdown}}
+
+    </div>
+
+</template>

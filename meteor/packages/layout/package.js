@@ -1,7 +1,7 @@
 Package.describe({
     name: 'diem:layout',
     version: '0.1.0',
-    summary: '',
+    summary: 'Layouts',
     git: '',
     documentation: 'README.md'
 });
@@ -13,6 +13,8 @@ Package.onUse(function(api) {
     api.use('mquandalle:stylus');
     api.use('kadira:flow-router');
     api.use('ecmascript');
+    // api.use('diem:components');
+    // api.use('diem:pages');
 
 
     // New Meteor 1.2 sylus importing
@@ -20,21 +22,22 @@ Package.onUse(function(api) {
     //     'client/index.styl'
     // ], 'client', {isImport: true});
 
-    // api.addFiles(['client/index.styl'], 'client', {isImport: true});
-
     // Client imports
     api.addFiles([
         'border-layout/border_layout.html',
         'border-layout/border_layout.import.styl',
         'border-layout/border_layout.js',
 
-        'main/default_layout.html',
-        'main/default_layout.js',
+        'main/main_layout.html',
+        'main/main_layout.js',
         // TODO: figure out the performance costs of not calling .import
         // calling .import.styl prevents Meteor from processing the file independently
-        'main/default_layout.styl'
+        'main/main_layout.styl',
+
+        'both/routes.js'
 
     ],'client');
+
 });
 
 Package.onTest(function(api) {

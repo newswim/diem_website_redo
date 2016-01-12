@@ -26,18 +26,19 @@ juliancwirko:postcss    # PostCSS w/ minifiers that run after the preprocessor
 kadira:blaze-layout     # Layout rendering for Flow Router
 kadira:flow-router      # Carefully Designed Client Side Router for Meteor
 
-# application architecture
+# ARCHITECTURE
 peerlibrary:blaze-components            # A system for easily developing complex UI elements
 peerlibrary:blaze-layout-component      # A simple Blaze Component for use with Flow Router's layout manager
 
-# utilities
+# UTILITIES
 fortawesome:fontawesome
 zimme:active-route
 spiderable              # part of WebApp
-#timbrandin:slick        # wrapper for Slick Carousel
-lookback:dropdowns
-
+panter:slick            # another wrapper for Slick Carousel
+lookback:dropdowns      # easy drop-down menus w/ transitions
 
 npm-container
 diem:layout
 diem:components
+diem:google-maps
+diem:pages
