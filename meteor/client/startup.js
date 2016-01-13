@@ -1,16 +1,16 @@
 if (Meteor.isClient) {
-    Template.HomePage.rendered = function() {
-        $('#carousel').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            // slidesToShow: 1,
-            // slidesToScroll: 1,
-            fade: true,
-            cssEase: 'linear',
-            adaptiveHeight: true
-        });
-    }
+    // Template.HomePageTemplate.rendered = function() {
+    //     $('#carousel').slick({
+    //         dots: true,
+    //         infinite: true,
+    //         speed: 300,
+    //         // slidesToShow: 1,
+    //         // slidesToScroll: 1,
+    //         fade: true,
+    //         cssEase: 'linear',
+    //         adaptiveHeight: true
+    //     });
+    // }
 }
 
 if (Meteor.isServer) {

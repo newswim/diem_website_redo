@@ -3,7 +3,7 @@ FlowRouter.route('/', {
   action: function (/*params, queryParams*/) {
     BlazeLayout.render('MainLayout', {
       top: 'NavBar',
-      main: 'HomePage',
+      main: 'HomePageTemplate',
       bottom: 'MainFooter'
     });
   }

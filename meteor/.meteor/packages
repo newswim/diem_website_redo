@@ -34,11 +34,13 @@ peerlibrary:blaze-layout-component      # A simple Blaze Component for use with 
 fortawesome:fontawesome
 zimme:active-route
 spiderable              # part of WebApp
-panter:slick            # another wrapper for Slick Carousel
+# panter:slick            # another wrapper for Slick Carousel
 lookback:dropdowns      # easy drop-down menus w/ transitions
+timbrandin:slick        # this is my own fork
 
 npm-container
 diem:layout
 diem:components
 diem:google-maps
 diem:pages
+natestrauser:animate-css

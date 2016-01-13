@@ -57,11 +57,11 @@ mobile-status-bar@1.0.6
 mongo@1.1.3
 mongo-id@1.0.1
 mquandalle:stylus@1.1.1
+natestrauser:animate-css@3.4.0
 npm-container@1.2.0
 npm-mongo@1.4.39_1
 observe-sequence@1.0.7
 ordered-dict@1.0.4
-panter:slick@1.5.9
 peerlibrary:assert@0.2.5
 peerlibrary:base-component@0.14.0
 peerlibrary:blaze-components@0.16.2
@@ -84,6 +84,7 @@ spacebars-compiler@1.0.7
 spiderable@1.0.9
 templating@1.1.5
 templating-tools@1.0.0
+timbrandin:slick@1.5.9
 tracker@1.0.9
 ui@1.0.8
 underscore@1.0.4

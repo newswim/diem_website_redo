@@ -5,7 +5,7 @@
     flex-flow column nowrap
     +above(1180px)
         flex-direction row
-    > div
+    div
         height 3rem
         width 100%
         cursor default
@@ -20,7 +20,9 @@
         &.active
             background-color darken($DiemGrey, 40%)
 
-        > p
-            color white
-            font-size $_large
-            align-self center
+        a
+            p
+                color white
+                // font-size responsive 13px 28px
+                // font-range 620px 1480px
+                align-self center
