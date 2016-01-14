@@ -20,7 +20,7 @@ Package.onUse(function(api) {
         'client/navbar/navbar.html',
         'client/navbar/navbar.styl',
         'client/navbar/navbar.js',
-        
+
         'client/bottom-nav/bottom_nav.html',
         'client/bottom-nav/bottom_nav.styl',
         'client/bottom-nav/bottom_nav.js',
@@ -30,10 +30,8 @@ Package.onUse(function(api) {
         'client/footer/main_footer.styl',
 
         'client/navbar/mobile_nav.html',
-        'client/navbar/mobile_nav.js',
 
         'client/navbar/desktop_nav.html',
-        'client/navbar/desktop_nav.js',
 
     ],'client');
 

@@ -1,4 +1,9 @@
 <template name="TestimonialsPage">
-
-Testimonials
+    <div class="test-wrapper">
+        {{#each testimonials}}
+            <div class="test-inner">
+                {{text}}
+            </div>
+        {{/each}}
+    </div>
 </template>

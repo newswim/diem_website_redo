@@ -3,26 +3,63 @@ class HomePageTemplate extends BlazeComponent {
     onCreated() {
         var me = this;
         me.sliderImages = [
-            {src: "img/slider_optimized/05_bar.jpg",           alt: "Simplify the complex",   slide: "12", annot: "........"},
-            {src: "img/slider_optimized/03_boardroom.jpg",     alt: "Simplify the complex",   slide: "11", annot: "......"},
-            {src: "img/slider_optimized/01_house.jpg",         alt: "Simplify the complex",   slide: "10", annot: "...."},
-            {src: "img/slider_optimized/06_lounge.jpg",        alt: "Simplify the complex",   slide: "09", annot: ".."},
-            {src: "img/slider_optimized/04_pub.jpg",           alt: "Simplify the complex",   slide: "08", annot: "Something"},
-            {src: "img/slider_optimized/02_restaurant.jpg",    alt: "Simplify the complex",   slide: "07", annot: "Of"},
-            {src: "img/slider_optimized/07_upscalebar.jpg",    alt: "Simplify the complex",   slide: "06", annot: "Explanation"}
-        ]
+            {
+                src: "img/slider_optimized/07_upscalebar.jpg",
+                alt: "Cost-Effective",
+                topic: "Cost-Effective",
+                annot: ""
+            },
+            {
+                src: "img/slider_optimized/05_bar.jpg",
+                alt: "Professional",
+                topic: "Professional",
+                annot: ""
+            },
+            {
+                src: "img/slider_optimized/01_house.jpg",
+                alt: "Complexity Made Simple",
+                topic: "Complexity Made Simple",
+                annot: ""
+            },
+            {
+                src: "img/slider_optimized/04_pub.jpg",
+                alt: "Clean",
+                topic: "Clean",
+                annot: ""
+            },
+            {
+                src: "img/slider_optimized/06_lounge.jpg",
+                alt: "Efficient",
+                topic: "Efficient",
+                annot: ""
+            },
+            {
+                src: "img/slider_optimized/03_boardroom.jpg",
+                alt: "Integrated",
+                topic: "Integrated",
+                annot: ""
+            },
+            // {
+            //     src: "img/slider_optimized/02_restaurant.jpg",
+            //     alt: "",
+            //     topic: "6",
+            //     annot: ""
+            // },
+        ];
     }
 
     onRendered() {
         $('.diem-slider').slick({
             dots: true,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 5000,
             speed: 400,
             // slidesToShow: 1,
             // slidesToScroll: 1,
             fade: true,
+            useCSS: true,
+            useTransform: true,
             cssEase: 'linear',
             adaptiveHeight: true
 

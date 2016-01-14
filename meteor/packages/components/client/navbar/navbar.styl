@@ -17,23 +17,27 @@
     color white
     lost-align right
     z-index 10
+    +above(1240px)
+        height 4rem
     .drop-down-container
         float right
         +above(976px)
             display none
         button
             border none
+            &:focus
+                outline 0
             i
                 color white
         .dropdown-menu
             z-index 10
-            background alpha($DiemGrey, .5)
+            background $DiemGrey
             width 10rem
             left 0
             h2
                 padding-left 10px
                 text-transform uppercase
-                font-weight 500
+                // font-weight 500
         .dropdown__trigger
             height 3rem
             width 10rem

@@ -1,2 +1,18 @@
+@import 'client/_styles/globals.import.styl'
+
 .contact-page-wrapper
-    font-size: responsive;
+    font-size responsive 14px 24px
+
+    .contact-page-inner
+        lost-center 960px
+        +below(1000px)
+            lost-center 600px
+
+        .contact-col
+            lost-column 1/2 2
+            padding-bottom 15px
+            &:nth-child(odd)
+                text-align center
+
+            > a
+                color rgb(244, 45, 10)
