@@ -1,0 +1,19 @@
+<template name="HomePageTemplate">
+
+        <div class="diem-slider">
+            {{#each sliderImages}}
+
+            <div class="item">
+                <div class="img-fill">
+                    <img src={{src}} alt={{alt}} width="100%" />
+                </div>
+                <div class="info">
+                    <div>
+                      <h3>{{topic}}</h3>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+</template>

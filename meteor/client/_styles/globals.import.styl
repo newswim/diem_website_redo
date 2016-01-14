@@ -1,10 +1,45 @@
+// Lost-Grid options
+// @lost flexbox flex
+// @lost gutter 0px
+// @lost cycle none     // | cycle accepts none or any digit. auto by default.
+
+// Brand Colors
 $DarkRed = #87100D
+$DiemRed = #7C1415
+$DiemGrey = #333333
 
-
-
+// Allignments
+_right-align
+    lost-align right
+_clearfix
+    lost-utility clearfix
 
 // Font Sizes
 $_tiny = 9px
 $_small = 11px
 $_medium = 13px
 $_large = 18px
+
+// Misc
+$_btn_lg = 30px
+$_btn_md = 24px
+
+
+
+// Global Layout Overrides
+
+body
+    margin 0
+
+
+// some RuckSack mixins
+input[type="range"]::track {
+  background: #9d9d9d;
+  height: 3px;
+}
+
+input[type="range"]::thumb {
+  background: #4286be;
+  width: 16px;
+  height: 8px;
+}

@@ -1,3 +1,5 @@
+"use strict";
+
 Package.describe({
   name: 'diem:components',
   version: '0.1.0',
@@ -12,22 +14,24 @@ Package.onUse(function(api) {
     api.use('mquandalle:stylus');
     api.use('kadira:flow-router');
     api.use('kadira:blaze-layout');
-    api.use('diem:layout');
-
-    // Routes
-    api.addFiles([
-        'both/routes.js'
-    ]);
-
-    // api.addFiles(['client/index.styl'], 'client', {isImport: true});
 
     api.addFiles([
 
-        'navbar/navbar_dark.html',
-        'navbar/navbar_dark.import.styl',
-        'navbar/navbar_red.html',
-        'navbar/navbar_red.import.styl',
-        'navbar/navbar.js'
+        'client/navbar/navbar.html',
+        'client/navbar/navbar.styl',
+        'client/navbar/navbar.js',
+
+        'client/bottom-nav/bottom_nav.html',
+        'client/bottom-nav/bottom_nav.styl',
+        'client/bottom-nav/bottom_nav.js',
+
+        'client/footer/main_footer.html',
+        'client/footer/main_footer.js',
+        'client/footer/main_footer.styl',
+
+        'client/navbar/mobile_nav.html',
+
+        'client/navbar/desktop_nav.html',
 
     ],'client');
 

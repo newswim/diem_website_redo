@@ -1,0 +1,42 @@
+@import 'client/_styles/globals.import.styl'
+@import 'jeet'
+
+.services-page-wrapper
+    lost-center 976px 10px
+    margin-bottom 2rem
+    +above(670px)
+        lost-center 660px 10px
+    +above(876px)
+        lost-center 850px
+    +above(1024px)
+        lost-center 976px 20px
+    +above(1240px)
+        lost-center 1020px
+    img
+        max-width 100%
+
+    > .services-page-inside
+        margin-top 2rem
+        > aside
+            lost-column 1/3 3
+            margin-bottom 2rem
+            padding 2em
+            box-sizing border-box
+            background-color lighten($DiemGrey, 80%)
+            +below(1300px)
+                stack()
+                padding 1em
+            > img
+                col(1/2)
+                max-width 14rem
+                +above(1300px)
+                    padding-bottom 2em
+                    width 100%
+            article
+                padding-top 5%
+                font-size responsive 16px 30px   //All values can be in px, rem, or em.
+                font-range 480px 1480px
+                col(1/2)
+                +above(1300px)
+                    stack()
+                    padding-bottom 2em

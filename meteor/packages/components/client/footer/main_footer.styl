@@ -1,0 +1,22 @@
+@import 'client/_styles/globals.import.styl'
+
+.clear-fix
+    _clearfix()
+
+.footer-wrap
+    height 4rem
+    display flex
+    justify-content space-around
+    font-size responsive
+    color white
+    background-color $DiemGrey
+    .footer-left > span
+        font-size $_medium
+    > div
+        align-self center
+        i
+            font-size 28px
+            padding 10px
+            +below(760px)
+                font-size 20px
+                padding 5px

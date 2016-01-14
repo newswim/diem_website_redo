@@ -1,0 +1,9 @@
+<template name="PortfolioPage">
+    <div class="portfolio-outer">
+        {{#each portfolioImages}}
+        <div class="img-wrapper">
+            <img src={{src}} alt={{alt}} />
+        </div>
+        {{/each}}
+    </div>
+</template>

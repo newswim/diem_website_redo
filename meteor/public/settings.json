@@ -1,0 +1,9 @@
+{
+  "_comment": "These are settings for okgrow:analystics and should be publicly
+               available, see: https://github.com/okgrow/analytics",
+  "public": {
+    "analyticsSettings": {
+      "Google Analytics" : {"trackingId": "UA-64144417-1"},
+    }
+  }
+}

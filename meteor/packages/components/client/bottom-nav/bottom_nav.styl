@@ -1,0 +1,35 @@
+@import 'client/_styles/globals.import.styl'
+
+.bottom-nav
+    display flex
+    flex-flow column nowrap
+    +above(1180px)
+        flex-direction row
+    div
+        height 3rem
+        width 100%
+        cursor default
+        margin-bottom 0em
+        text-align center
+        justify-content center
+        text-transform uppercase
+        background-color $DiemGrey
+        transition background-color 0.2s ease
+        font-size responsive 13px 24px
+        +above(1024px)
+            height 3.5rem
+        +above(1240px)
+            height 4rem
+        +above(1420px)
+            height 4.5rem
+        &:nth-child(3)
+            border-bottom 2px white solid
+        &.active
+            background-color darken($DiemGrey, 40%)
+
+        a
+            p
+                color white
+
+                // font-range 620px 1480px
+                align-self center

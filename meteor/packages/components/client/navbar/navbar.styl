@@ -1,0 +1,54 @@
+@import 'client/_styles/globals.import.styl'
+
+.top-filler
+    background-color $DiemGrey
+    lost-utility clearfix
+    height 3rem
+
+.logo-wrapper
+    // background-color $DarkRed
+    .header-image
+        lost-column 1/3
+    .lost-cf-ut
+        lost-utility clearfix
+.nav-wrapper
+    height 3rem
+    background-color $DiemGrey
+    color white
+    lost-align right
+    z-index 10
+    +above(1240px)
+        height 4rem
+    .drop-down-container
+        float right
+        +above(976px)
+            display none
+        button
+            border none
+            &:focus
+                outline 0
+            i
+                color white
+        .dropdown-menu
+            z-index 10
+            background $DiemGrey
+            width 10rem
+            left 0
+            h2
+                padding-left 10px
+                text-transform uppercase
+                // font-weight 500
+        .dropdown__trigger
+            height 3rem
+            width 10rem
+            font-size $_btn_lg
+            background-color $DiemGrey
+
+    .desktop-nav-wrap
+        lost-column 1/3
+        +below(976px)
+            display none
+        border-right 2px solid white
+        a
+            lost-column 1/3
+            font-size responsive

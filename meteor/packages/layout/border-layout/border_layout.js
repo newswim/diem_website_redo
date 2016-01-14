@@ -1,4 +1,4 @@
 'use strict';
 
-BlazeComponent.extendComponent({
-}).register('BorderLayout');
+// BlazeComponent.extendComponent({
+// }).register('BorderLayout');

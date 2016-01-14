@@ -1,0 +1,46 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+reactive-var            # Reactive variable
+reactive-dict           # Reactive dictionary/map/array
+
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+
+autopublish             # Publish all data to the clients (for prototyping)
+insecure                # Allow all DB writes from clients (for prototyping)
+
+mquandalle:stylus       # Community-driven stylus with additional plugins
+dburles:google-maps     # A wrapper for Google Maps API
+juliancwirko:postcss    # PostCSS w/ minifiers that run after the preprocessor
+
+kadira:blaze-layout     # Layout rendering for Flow Router
+kadira:flow-router      # Carefully Designed Client Side Router for Meteor
+
+# ARCHITECTURE
+peerlibrary:blaze-components            # A system for easily developing complex UI elements
+peerlibrary:blaze-layout-component      # A simple Blaze Component for use with Flow Router's layout manager
+
+# UTILITIES
+fortawesome:fontawesome
+zimme:active-route
+spiderable              # part of WebApp
+# panter:slick            # another wrapper for Slick Carousel
+lookback:dropdowns      # easy drop-down menus w/ transitions
+timbrandin:slick        # this is my own fork
+
+npm-container
+diem:layout
+diem:components
+diem:google-maps
+diem:pages
+natestrauser:animate-css

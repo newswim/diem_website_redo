@@ -1,14 +1,13 @@
+@import "_styles/globals.import.styl"
+
 body
-    h1
+    h1, h2, h3, h4, h5, p, div
         font-family Arial-Narrow
 
-
-    .drop-down-container
-        width 33%
-        margin auto
-        display flex
-        .dropdown__trigger
-            flex-grow 1
-        .dropdown-menu
-            text-align center
-            flex-grow 1
+a
+    color white
+    font-weight 300
+    text-decoration none
+    &:hover
+        font-weight 900
+        color darken(white, 20%)
