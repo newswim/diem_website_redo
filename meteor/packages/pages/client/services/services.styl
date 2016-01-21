@@ -1,7 +1,7 @@
 @import 'client/_styles/globals.import.styl'
 @import 'jeet'
 
-.services-page-wrapper
+.services-page-wrapper, .services-hero
     lost-center 976px 10px
     margin-bottom 2rem
     +above(670px)
@@ -12,8 +12,18 @@
         lost-center 976px 20px
     +above(1240px)
         lost-center 1020px
-    img
-        max-width 100%
+    .services-hero
+        background url('../../../../img/technical_image.jpg')
+        background-size cover
+        position relative
+        height 375px
+        opacity 1
+        +above(1240px)
+            height 425px
+        +below(800px)
+            height 300px
+        +below(600px)
+            height 200px
 
     > .services-page-inside
         margin-top 2rem

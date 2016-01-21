@@ -52,7 +52,7 @@ class HomePageTemplate extends BlazeComponent {
         $('.diem-slider').slick({
             dots: true,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 5000,
             speed: 400,
             // slidesToShow: 1,

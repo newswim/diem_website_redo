@@ -7,7 +7,9 @@
         <div class="footer-middle">
             <span>
                 <a href="/careers">Careers</a>
+                {{#if isActiveRoute regex='services|partners|contact'}}
                  | <a href="/about">About Us</a>
+                {{/if}}
              </span>
         </div>
         <div class="footer-right">
